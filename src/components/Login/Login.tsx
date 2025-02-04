@@ -38,7 +38,7 @@ export const Login = (props: Props) => {
       <p>Почта для входа tester@gmail.com</p>
       <p>Пароль для входа 12345678</p>
 
-      {error && <p className={styles.error}>{error}</p>}
+        {error && <p className={styles.error} data-testid="login-error">{error}</p>}
 
       <div>
         <input
@@ -46,6 +46,7 @@ export const Login = (props: Props) => {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          data-testid="login-email"
         />
       </div>
       <input
@@ -53,9 +54,10 @@ export const Login = (props: Props) => {
         placeholder="Пароль"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        data-testid="login-password"
       />
       <div>
-        <button type="button" onClick={handleSubmit} disabled={isLoading}>
+        <button type="button" onClick={handleSubmit} disabled={isLoading} data-testid="login-submit">
           {isLoading ? "Загрузка" : "Войти"}
         </button>
       </div>
