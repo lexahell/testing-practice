@@ -23,10 +23,10 @@ export const Modal = (props: PropsWithChildren<Props>) => {
   }
 
   return createPortal(
-    <div className={styles.modal}>
-      <div className={styles.content} ref={contentRef}>
+    <div className={styles.modal} data-testid="modal-overlay">
+      <div className={styles.content} ref={contentRef} data-testid="modal-content">
         {children}
-        <button className={styles.close} type="button" onClick={handleClose}>
+        <button className={styles.close} type="button" onClick={handleClose} data-testid="modal-close">
           X
         </button>
       </div>
