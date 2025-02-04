@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { LoginPayload } from "../types";
-import { authorizeUser } from '../api';
+import { LoginPayload } from "../../types";
+import { authorizeUser } from '../../api';
 
 type Props = {
   handleSuccess?: (payload: LoginPayload) => void;

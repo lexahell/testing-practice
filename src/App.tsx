@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal } from "./components/Modal";
 import { Login } from "./components/Login";
-import { useAuthorization } from "./hooks/useAuthorization";
+import { useAuthorization } from "./hooks/useAuthorization/useAuthorization";
 
 export const App = () => {
   const [isOpen, setIsOpen] = useState(false);

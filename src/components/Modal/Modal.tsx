@@ -2,8 +2,8 @@ import React, { PropsWithChildren, useRef } from "react";
 import { createPortal } from "react-dom";
 
 import styles from "./Modal.module.css";
-import { useClickOutside } from "hooks/useClickOutside";
-import { useKeyDown } from "hooks/useKeyDown";
+import { useClickOutside } from "hooks/useClickOutside/useClickOutside";
+import { useKeyDown } from "hooks/useKeyDown/useKeyDown";
 
 type Props = {
   isOpen: boolean;
