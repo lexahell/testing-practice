@@ -1,7 +1,7 @@
 import { act, renderHook } from '@testing-library/react';
 import { useAuthorization } from './useAuthorization';
 import { LoginPayload } from 'types';
-import { authorizeUser } from 'api';
+import { authorizeUser } from '../../api';
 
 jest.mock('../../api');
 
